@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Arrayfull {
 
+	public static Scanner teclado =  new Scanner(System.in);
+	public static int[] array = new int[5];
+	/*public static void main(String[] args) {
 	
-	public static void main(String[] args) {
-		 Scanner teclado =  new Scanner(System.in);
-		 int[] array = new int[5];
 		
 //		Ingresar los valores del array
 		Ingresarvaloresarray(array,teclado);
@@ -22,7 +22,7 @@ public class Arrayfull {
 //		Calculando el promedio (primera de las muchas formas que se pueden hacer)
 		promedioArray(array);
 		
-	}
+	}*/
 
 //	Calculando el promedio (primera de las muchas formas que se pueden hacer)
 	public static void promedioArray(int[] array) {
@@ -36,7 +36,7 @@ public class Arrayfull {
 	}
 
 //	Calculando el máximo
-	private static int valorMaximo(int[] array) {
+	public static int valorMaximo(int[] array) {
 		int max=0;
 		for (int i = 0; i < array.length; i++) {
 			if(max<array[i]){
@@ -47,7 +47,7 @@ public class Arrayfull {
 	}
 
 //	Suma de los arrays
-	private static void sumaarray(int[] array) {
+	public static void sumaarray(int[] array) {
 		System.out.println("Suma");
 		int acumulador = 0;
 		for (int i = 0; i < array.length; i++) {
