@@ -1,5 +1,7 @@
 package com.herry.soto.ejercicios;
 
+import java.util.Iterator;
+
 public class ForArray {
 
 	public static void main(String[] args) {
@@ -14,7 +16,15 @@ public class ForArray {
 		for (int i = 0; i < array.length; i++) {
 			System.out.println(array[i]+",");
 		}
-
+		
+		
+		//otra manera de correr el for(mejorado)
+		String[] social = {"twiter","facebook","messenger"};
+		
+		for (String s : social) {
+			System.out.println(s);
+			
+		}
 	}
 
 }

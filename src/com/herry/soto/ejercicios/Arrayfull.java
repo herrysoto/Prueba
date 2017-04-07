@@ -43,6 +43,7 @@ public class Arrayfull {
 				max = array[i];
 			}
 		}
+		System.out.println(max);
 		return max;
 	}
 

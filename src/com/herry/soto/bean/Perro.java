@@ -2,7 +2,7 @@ package com.herry.soto.bean;
 
 public class Perro {
 	private String nombre;
-	private String color;
+	protected String color;//quiere decir que puede ser accedido solo por los hijos mas no por ninguna otra clase
 	private double peso;
 	
 	public String getNombre() {
@@ -30,9 +30,9 @@ public class Perro {
 	}
 
 	public void ImprimirPerro(){
-		System.out.println();
-		System.out.println("nombre:"+this.getNombre());
-		System.out.println("color:"+this.getColor());
-		System.out.println("peso:"+this.getPeso());
+
+		System.out.print("nombre:"+this.getNombre());
+		System.out.print(" color:"+this.getColor());
+		System.out.print(" peso:"+this.getPeso());
 	}
 }
